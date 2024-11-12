@@ -3,8 +3,8 @@
     <head>
         <title> Dedal de couleurs </title>
         <meta charset="utf-8"/>
-		<link rel="stylesheet" href="" />
-		<script src="https://kit.fontawesome.com/a89d872ece.js"></script>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="https://kit.fontawesome.com/39f488df44.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -13,8 +13,13 @@
         <!-- Haut de ma page -->
          <header>
             <h1>Dédal de couleurs</h1>
-            <p>Paris</p>
-            <nav>
+            
+            <div class="bloc">
+                <hr class="line">
+                <p id="title">Paris</p>
+                <hr class="line">
+            </div>
+            <nav class="navbar">
                 <a href="#">Accueil</a>
                 <a href="#">Évènements</a>
                 <a href="#">Achat</a>
@@ -23,16 +28,17 @@
          </header>
 
         <!-- En-tête -->
-         <section>
-            <img src="images/image 1.jpg" alt="">
+         <section class="section1">
+            <img id="img1" src="images/image 1.jpg" alt="">
             <article>
                 <p class="text">by Paul DECHEWSKY</p>
-                <p class="text">Passionné de peinture et de mouvance expressioniste, Paul vous plonge dans son univers élégant et chaleureux entre artistes célèbres et émergents.</p>
+                <p class="text">Passionné de peinture et de mouvance expressioniste, Paul vous plonge dans son <br> univers élégant et chaleureux entre artistes célèbres et émergents.</p>
             </article>
          </section>
 
          <!-- Présentation des artistes du moment -->
          <section>
+            <hr class="line1">
             <h3>Nos artistes du moment :</h3>
 
             <div id="pablo">
@@ -63,11 +69,19 @@
             <figure>
                 <div>
                     <img src="images/image 7.jpg" alt="">
+                    <div class="text1">Focus sur Modigliani
+                                        du 4 au 17 novembre</div>
                 </div>
+
                 <div>
                     <img src="images/image 8.jpg" alt="">
+                    <div class="text2">Focus sur Picasso
+                        Du 25 novembre au 8 décembre</div>
                 </div>
+                <div>
                     <img src="images/image 9.png" alt="">
+                    <div class="text3">Angelika Millmaker
+                        du 18 au 24 novembre</div>
                 </div>
             </figure>
 
@@ -75,6 +89,9 @@
                 C'est l'opportunité parfaite pour faire découvrir votre travail à un public passionné d'art. 
                 Vous êtes un artiste en devenir ? Nh'hésitez pas à candidater et à rejoindre notre aventure artistique.
             </p>
+
+            <i class="fa-sharp fa-solid fa-file-import"></i>
+
          </section>
 
          <!-- Newletter -->
@@ -131,17 +148,17 @@
                     <h4>Nous contacter</h4>
 
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-phone"></i>
                             <p>01.63.45.85.56</p>
                         </div>
 
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-fax"></i>
                             <p>01.63.45.78.52</p>
                         </div>
-                        
+
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-envelope"></i>
                             <p>dedal@gmail.com</p>
                         </div>
                 </article>
@@ -150,9 +167,9 @@
             <h4>Suivez-nous !</h4>
 
             <div>
-                <i class=""></i>
-                <i class=""></i>
-                <i class=""></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </div>
 
             <nav>
