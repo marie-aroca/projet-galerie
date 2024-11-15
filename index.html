@@ -42,22 +42,22 @@
             <h3 id="artistes">Nos artistes du moment :</h3>
 
             <div id="pablo">
-                <img src="images/image 2.jpg" alt="">
+                <img src="images/image 2.jpg" alt="" loading="lazy">
                 <p>Pablo Picasso</p>
             </div>
 
             <div id="Modigliani">
-                <img src="images/image 3.jpg" alt="">
+                <img src="images/image 3.jpg" alt="" loading="lazy">
                 <p>Modigliani</p>
             </div>
 
             <div id="Angelika">
-                <img src="images/image 4.png" alt="">
+                <img src="images/image 4.png" alt="" loading="lazy">
                 <p>Angelika Millmaker</p>
             </div>
 
             <div id="Soutine">
-                <img src="images/image 5.jpg" alt="">
+                <img src="images/image 5.jpg" alt="" loading="lazy">
                 <p>Soutine</p>
             </div>
          </section>
@@ -100,10 +100,31 @@
             <div id="forme">
                 <p>Pour ne rien manquer <br>
                     Inscrivez-vous à notre Newletter !</p>
-
-                    <div id="forme2">
-                        <p>CLIQUEZ ICI</p>
+                    
+                    <!-- formulaire d'inscription -->
+                    <input type="checkbox" id="openModal" hidden>
+                    <div id="modalForm">
+                        <div class="modal-content">
+                            <form id="formulaire">
+                                <h2>Inscription</h2>
+                                <label for="nom">Nom :</label>
+                                    <input type="text" id="nom" name="nom" required>
+                        
+                                <label for="prenom">Prénom :</label>
+                                    <input type="text" id="prenom" name="prenom" required>
+                             
+                                <label for="email">Adresse e-mail :</label>
+                                    <input type="email" id="email" name="email" required>
+                                <br>
+                                <button type="submit">Envoyer</button>
+                            </form> 
+                            <label for="openModal" class="close-btn">Fermer</label>
+                        </div>
                     </div>
+                    
+                    <label for="openModal" id="forme2">
+                        <p>CLIQUEZ ICI</p>
+                    </label>                    
             </div>
          </section>
 
@@ -178,7 +199,7 @@
             
             <nav>
                 <a href="#">Termes</a>
-                <a href="#">Confidentalité</a>
+                <a href="#">Confidentialité</a>
                 <a href="#">Cookies</a>
             </nav>
          </footer>
