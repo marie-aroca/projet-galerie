@@ -6,9 +6,7 @@ body{
 h1{
     text-align: center;
     font-size: 50px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
     margin-bottom: 0px;
     margin-top: 20px;
 }
@@ -16,9 +14,7 @@ h1{
 #title{
     text-align: center;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-top: 0px;
 }
 
@@ -47,14 +43,12 @@ h1{
     gap: 20px;
     text-align: center;
     margin-right: 90px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .navbar a {
     font-size: 22px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     text-decoration: none;
     color: black; 
     transition: color 0.3s;
@@ -76,14 +70,12 @@ h1{
     height: 644px;
     flex-shrink: 0;
     background-color: lightgray; 
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .text {
     font-size: 19px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     text-align: center;
 }
 
@@ -99,9 +91,7 @@ h1{
     color: #6E080C;
     text-align: center;
     font-size: 35px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -123,9 +113,7 @@ h1{
     color: #6E080C;
     text-align: center;
     font-size: 35px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     margin-top: 20px; 
     margin-bottom: 20px; 
 }
@@ -135,6 +123,10 @@ h1{
     margin: 10px;
     text-align: center;
     font-size: 20px;
+}
+
+#pablo:hover, #Modigliani:hover, #Angelika:hover, #Soutine:hover {
+    font-weight: bold;
 }
 
 #pablo img, #Modigliani img, #Angelika img, #Soutine img {
@@ -149,16 +141,14 @@ h1{
 }
 
 #Actualités {
-    background: rgba(160, 137, 116, 0.15); 
+    background: #a0897426; 
     padding: 20px; 
     margin: 20px auto; 
 }
 
 #Actualités h3 {
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     margin-left: 50px;
     text-align: left;
     margin-top: 13px;
@@ -205,9 +195,7 @@ h1{
     transform: translate(-50%, -50%); 
     color: #000000; 
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     text-align: center;
 }
 
@@ -225,6 +213,11 @@ h1{
     font-size: 50px; 
 }
 
+#Actualités img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
 #newsletter {
     margin-top: 40px;
 }
@@ -234,7 +227,7 @@ h1{
     height: 272px;
     border-radius: 70px;
     background: #6E080C;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px #00000040;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -246,9 +239,7 @@ h1{
     color: #FFF;
     text-align: center;
     font-size: 47px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     margin: 0; 
 }
 
@@ -256,21 +247,72 @@ h1{
     width: 292px;
     height: 65px;
     border-radius: 10px;
-    background: rgba(170, 50, 17, 0.60);
+    background: #aa321199;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px; 
+    cursor: pointer;
 }
 
 #forme2 p {
     color: #FFF;
     text-align: center;
     font-size: 32px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin: 0; 
+}
+
+/* Style pour la fenêtre modale */
+#modalForm {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    justify-content: center;
+    align-items: center;
+}
+
+#modalForm .modal-content {
+    background-color: #e3dcd3;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.modal-content label {
+    display: block; 
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+button{
+    margin-top: 10px;
+}
+
+.close-btn {
+    background-color: #6E080C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+.close-btn:hover {
+    background-color: #aa3211;
+}
+
+#openModal:checked + #modalForm {
+    display: flex;
 }
 
 #galerie h3 {
@@ -332,9 +374,7 @@ h1{
     color: #000;
     text-align: center;
     font-size: 26px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-top: 40px;
 }
 
@@ -346,9 +386,7 @@ h1{
     color: #6E080C;
     text-align: center;
     font-size: 26px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -357,7 +395,7 @@ h1{
 
 #forme3 h6:hover {
     background: #6E080C;
-    color: rgb(227, 220, 211);
+    color: #e3dcd3;
 }
 
 footer {
@@ -400,9 +438,7 @@ footer #info #info1 h3 {
     color: #FFF;
     text-align: left;
     font-size: 40px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
     margin-left: 100px;
     margin-bottom: 10px;
 }
@@ -410,9 +446,7 @@ footer #info #info1 h3 {
 footer #info #info1 p {
     color: #FFF;
     font-size: 28px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-left: 100px;
     margin-top: 0px;
 }
@@ -421,9 +455,7 @@ footer #info #info2 h4 {
     color: #FFF;
     text-align: center;
     font-size: 32px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     margin-bottom: 20px;
     margin-top: 50px;
     text-decoration: underline;
