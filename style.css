@@ -66,10 +66,9 @@ h1{
 }
 
 #img1 {
-    width: 1280px;
-    height: 644px;
-    flex-shrink: 0;
-    background-color: lightgray; 
+    width: 100%;      /* L'image prendra toute la largeur de son conteneur */
+    height: auto;     /* La hauteur sera ajustée proportionnellement */
+    max-width: 1280px;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
@@ -103,7 +102,7 @@ h1{
 
 .line1 {
     background: #6E080C;
-    width: 700px;
+    width: 90%;
     height: 1px;
     border: none; 
     margin: 20px auto;
@@ -325,7 +324,7 @@ button{
     margin-top: 60px;
 }
 
-#galerie div {
+.galerie {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 20px;
@@ -386,11 +385,18 @@ button{
     color: #6E080C;
     text-align: center;
     font-size: 26px;
-    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
     margin: 10px 0; 
+}
+
+#forme3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 #forme3 h6:hover {
@@ -533,4 +539,150 @@ nav a {
 
 footer nav a:hover {
         color: gray;
+}
+
+@media screen and (max-width : 768px){
+   
+   body{
+    max-width: 768px;
+   }
+
+   #img1{
+    max-width: 700px;
+   }
+
+   .text{
+    font-size: 19px;
+    margin-top: 20px;
+    }
+
+    #forme{
+        width: 85%;
+        height: 170px;
+    }
+
+    #forme p{
+        font-size: 30px;
+    }
+
+    #forme2{
+        width: 170px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    #forme2 p{
+        font-size: 25px;
+    }
+
+    .galerie {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Utilisation de fractions pour garder trois colonnes */
+        gap: 10px; /* Réduction de l'espace */
+        justify-content: center;
+        align-items: start;
+        margin: 0 auto;
+    }
+
+    #galerie h3{
+        margin-top: 50px;
+
+    }
+
+    #image1 {
+        width: 100%; /* Laisse la grille gérer la taille */
+        height: auto; /* Conserve les proportions */
+    }
+
+    #image2 {
+        width: 100%;
+        height: auto;
+        margin-left: 0px; /* Ajustement proportionnel */
+        margin-top: 20px;
+    }
+
+    #image3 {
+        width: 100%;
+        height: auto;
+    }
+
+    #image4 {
+        width: 100%;
+        height: auto;
+        margin-top: 58px;
+    }
+
+    #image5 {
+        width: 100%;
+        height: auto;     
+    }
+
+    #image6 {
+        width: 100%;
+        height: auto;
+        margin-top: -70px; /* Ajustement proportionnel */
+    }
+    .line{
+        width: 42%;
+    }
+
+    #line3{
+        width: 80%;
+    }
+
+    #forme3 {
+        gap: 20px;
+    }
+
+    #forme3 h6{
+        width: 325px;
+    }
+
+    footer #info {
+        display: block;
+        text-align: center;
+    }
+    
+    footer #info #info1 h3{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    footer #info article{
+        padding-top: 1px;
+    }
+
+    footer #info #info1 p {
+        margin-left: 0px;
+    }
+
+    footer #info img{
+        margin-top: 15px;
+    }
+    
+    footer #info #info2 h4{
+        margin-top: 30px;
+    }
+
+    #line2{
+        width: 60%;
+    }
+
+    footer #info .Contact {
+        flex-direction: row; 
+        justify-content: center;
+        margin-left: 0; 
+        margin-bottom: 20px; 
+    }
+
+    footer #info .Contact i {
+        margin-right: 20px; 
+        font-size: 24px; 
+    }
+
+    footer #info #info2 .Contact p {
+        font-size: 20px; 
+        font-weight: 400;
+    }
 }
